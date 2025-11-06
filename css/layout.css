@@ -1,0 +1,496 @@
+@charset "utf-8";
+
+/*폰트 S-CoreDream*/
+@font-face {
+  font-family: 'S-Core Dream';
+  src: url('../font/S-CoreDream-1Thin.woff2') format('woff2'),
+    url('../font/S-CoreDream-1Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'S-Core Dream';
+  src: url('../font/S-CoreDream-2ExtraLight.woff2') format('woff2'),
+    url('../font/S-CoreDream-2ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'S-Core Dream';
+  src: url('../font/S-CoreDream-3Light.woff2') format('woff2'),
+    url('../font/S-CoreDream-3Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'S-Core Dream';
+  src: url('../font/S-CoreDream-4Regular.woff2') format('woff2'),
+    url('../font/S-CoreDream-4Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'S-Core Dream';
+  src: url('../font/S-CoreDream-5Medium.woff2') format('woff2'),
+    url('../font/S-CoreDream-5Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'S-Core Dream';
+  src: url('../font/S-CoreDream-6Bold.woff2') format('woff2'),
+    url('../font/S-CoreDream-6Bold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'S-Core Dream';
+  src: url('../font/S-CoreDream-7ExtraBold.woff2') format('woff2'),
+    url('../font/S-CoreDream-7ExtraBold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'S-Core Dream 8';
+  src: url('../font/S-CoreDream-8Heavy.woff2') format('woff2'),
+    url('../font/S-CoreDream-8Heavy.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'S-Core Dream';
+  src: url('../font/S-CoreDream-9Black.woff2') format('woff2'),
+    url('../font/S-CoreDream-9Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*폰트 Hakgyoansim Gaeulsopung*/
+@font-face {
+  font-family: 'Hakgyoansim Gaeulsopung';
+  src: url('../font/Hakgyoansim GaeulsopungL.woff2') format('woff2'),
+    url('../font/Hakgyoansim GaeulsopungL.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Hakgyoansim Gaeulsopung L';
+  src: url('../font/Hakgyoansim GaeulsopungL.woff2') format('woff2'),
+    url('../font/Hakgyoansim GaeulsopungL.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Hakgyoansim Gaeulsopung';
+  src: url('../font/Hakgyoansim GaeulsopungB.woff2') format('woff2'),
+    url('../font/Hakgyoansim GaeulsopungB.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Hakgyoansim Gaeulsopung B';
+  src: url('../font/Hakgyoansim GaeulsopungB.woff2') format('woff2'),
+    url('../font/Hakgyoansim GaeulsopungB.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*스크롤 부드럽게 처리*/
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  font-family: 'Poppins', 'S-Core Dream', 'Hakgyoansim Gaeulsopung', sans-serif;
+  font-size: 62.5%;
+  font-weight: 400;
+  color: #444;
+}
+
+#wrap {
+  overflow-x: hidden;
+}
+
+/*헤더영역*/
+#header { 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 34px 60px;
+  z-index: 100;
+}
+#header .header_inner {  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 1800px;  
+}
+#header .header_inner h1 a {
+  display: block;
+}
+#header .header_inner h1 img {
+  line-height: 0;
+}
+
+/*gnb*/
+#header .header_inner #gnb>ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 40px;
+}
+#header .header_inner #gnb>ul>li a{
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #444;
+  text-transform: uppercase;
+}
+#header .header_inner #gnb>ul>li a:hover{
+  color: #000;
+}
+/* Float Shadow */
+.hvr-float-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-float-shadow:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  /* W3C */
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+.hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  /* move the element up by 5px */
+}
+.hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
+  opacity: 1;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+
+/*메인비주얼*/
+#container .main_visual{
+  position: relative;
+  width: 100%;
+  height: 1080px;
+  background: url(../images/main_visual.jpg) no-repeat center top;
+  background-size: contain;
+}
+/*aboutme*/
+#container .Profile{
+  margin: 170px auto 150px;
+  width: 1440px;
+}
+#container .Profile .intro{
+  background: url(../images/img_character.png) no-repeat right top;
+}
+#container .Profile .intro h2{
+  margin-bottom: 34px;
+  font-size: 6.4rem;
+  font-weight: 600;
+  color: #222;
+}
+#container .Profile .intro strong{
+  font-family: 'Hakgyoansim Gaeulsopung';
+  font-size: 4.2rem;
+  font-weight: 600;
+  color: #1E257F;
+  line-height: 44px;
+}
+#container .Profile .intro p{
+  padding: 24px 0;
+  font-size: 2.0rem;
+  line-height: 38px;
+}
+/*경력 및 학력*/
+#container .Profile .profile_section{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 110px;
+  font-size: 1.8rem;
+}
+#container .Profile .profile_section>div{
+  flex: 1;
+}
+#container .Profile .profile_section h3{
+  padding-bottom: 17px;
+  font-size: 4.0rem;
+  font-weight: 600;
+  color: #333;
+}
+#container .Profile .profile_section span{
+  display: inline-block;
+  width: 200px;
+  font-family: 'S-Core Dream';
+}
+#container .Profile .profile_section li{
+  padding: 5px 0;
+}
+#container .Profile .profile_section .education .indent{
+  margin-left: 192px;
+}
+/*보유스킬*/
+#container .Profile .skill h3{
+  padding:100px 0 22px;
+  font-size: 4.0rem;
+  font-weight: 600;
+  color: #333;
+}
+#container .Profile .skill .skill-cont{
+  display: flex;
+  gap: 82px;
+  flex-wrap: wrap;
+}
+#container .Profile .skill .skill-cont .skill-column{
+  flex: 1 1 35%;
+  min-width: 678px;
+}
+#container .Profile .skill .skill-cont .skill-column .skill-item{
+  margin-bottom: 60px;
+}
+#container .Profile .skill .skill-cont .skill-column .skill-item .skill-header{
+  display: flex;
+  align-items: flex-start;
+}
+#container .Profile .skill .skill-cont .skill-column .name{  
+  font-size: 2.0rem;
+  font-weight: 600;
+  line-height: 27px;
+}
+#container .Profile .skill .skill-cont .skill-column .description{
+  padding-left: 30px;
+}
+#container .Profile .skill .skill-cont .skill-column p{
+  font-size: 1.8rem;
+}
+#container .Profile .skill .skill-cont .skill-item .bar-wrap{
+  position: relative;
+  margin-top: 20px;
+  background-color: #D9D9D9;
+  height: 12px;
+  overflow: visible;
+}
+#container .Profile .skill .skill-cont .skill-item .bar-wrap .bar{
+  height: 100%;
+  background-color: #669AFF;
+  width: 0; 
+  transition: width 1.5s ease-out;
+}
+#container .Profile .skill .skill-cont .skill-item .bar-wrap .percentage{
+  position: absolute;
+  top: 22px;
+  right: 0;
+  font-size: 1.4rem;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out 1.2s;
+  z-index: 10; /* 바(bar) 위에 나타나도록 z-index 추가 */
+  white-space: nowrap; /* 글자가 잘리지 않도록 */
+}
+#container .Profile .skill .skill-cont .skill-item .bar-wrap.animated .percentage{
+  opacity: 1;
+}
+/*프로젝트*/
+#container .project{
+  padding: 100px 0 110px;
+  width: 100%;
+  background-color: #F4FAFD;
+}
+#container .project h2{
+  margin-bottom: 86px;
+  font-size: 6.4rem;
+  font-weight: 600;
+  color: #222;
+  text-align: center;
+}
+#container .project .project_inner{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 110px;
+  margin: 0 auto;
+  width: 1440px;
+}
+#container .project .project_inner li{
+  position: relative;  
+  width: calc(100% - 24px)/2;
+}
+#container .project .project_inner li img{
+  display: block;
+  cursor: pointer;
+}
+#container .project .project_inner .info_area span{
+  display: block;
+  padding: 40px 0 10px;
+}
+#container .project .project_inner .info_area strong{
+  font-size: 2.8rem;
+  font-weight: 500;
+  color: #333;
+}
+#container .project .project_inner .info_area b{
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#container .project .project_inner .info_area i{
+  padding: 0 15px 5px 8px;
+  font-size: 1.5rem;
+  font-weight: 300;
+  vertical-align: middle;
+}
+#container .project .project_inner .info_area p{
+  font-size: 2.2rem;
+  line-height: 28px;
+}
+/*프로젝트 이미지 호버서 나타나는 내용*/
+#container .project .project_inner li .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 55px 63px 50px;
+  width: 708px;
+  height: 480px;
+  font-weight: 300;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.85);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 10;
+}
+#container .project .project_inner li:hover .overlay{
+  opacity: 1;
+}
+#container .project .project_inner .overlay strong{
+  font-size: 2.0rem;
+  font-weight: 500;
+  line-height: 40px;
+}
+#container .project .project_inner .overlay p{
+  font-size: 1.5rem;
+  line-height: 26px;
+}
+#container .project .project_inner .overlay em{
+  display: block;
+  padding: 15px 0 44px;
+  font-size: 1.8rem;
+}
+#container .project .project_inner .overlay>.btn{
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+#container .project .project_inner .overlay>.btn>a{
+  display: inline-block;
+  padding: 6px 22px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #2BA59C;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #2BA59C;
+}
+#container .project .project_inner .overlay>.btn>a:hover{
+  display: inline-block;
+  padding: 6px 22px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #2BA59C;
+  border: 1px solid #2BA59C;
+  transition: 0.3s linear;
+}
+/*퀵 영역*/
+#btn_top{
+  position: fixed;
+  right: 5px;
+  bottom: 10px;
+  z-index: 50;
+}
+/*푸터 영역*/
+#footer{
+  padding: 48px 0 30px;
+  background-color: #BCC5C9;
+}
+#footer .footer_inner{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 850px; 
+}
+#footer .footer_inner .contact-title{
+  display: flex;
+  align-items: center;
+}
+#footer .footer_inner .contact-title h4{
+  margin-right: 14px;
+  font-size: 3.6rem;
+  font-weight: 500;
+  color: #222;
+}
+#footer .footer_inner .contact-title span{
+  display: inline-block;
+}
+#footer .footer_inner .contact-title img{
+  width: 30px;
+  height: 30px;
+  line-height: 0;
+}
+#footer .footer_inner .info p{
+  font-size: 1.6rem;
+}
+#footer .footer_inner .info a{
+  font-size: 4.0rem;
+  font-weight: 600;
+  color: #222;
+}
+#footer .copyright-section{
+  margin-top: 24px;
+  text-align: center;
+}
+#footer .copyright-section .disclaimer{
+  font-size: 1.5rem;
+}
+#footer .copyright-section .copyright{
+  padding-top: 4px;
+  font-size: 1.6rem;
+}

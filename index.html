@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--<meta property="og:title" content="portfolio">
+  <meta property="og:description" content="웹디자이너 정해경 포트폴리오입니다.">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+   -->
+  <!--font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <!--swiper css
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">-->
+  <title>웹디자이너 포트폴리오 by 정해경</title>
+</head>
+
+<body>
+  <div id="wrap">
+    <!--헤더 영역-->
+    <header id="header">
+      <div class="header_inner">
+        <h1>
+          <a href="index.html"><img src="images/logo.png" alt="Haekyung&#39;s Portfolio"></a>
+        </h1>
+        <!--gnb-->
+        <nav id="gnb">
+          <ul>
+            <li class="hvr-float-shadow"><a href="#">Home</a></li>
+            <li class="hvr-float-shadow"><a href="#about">About</a></li>
+            <li class="hvr-float-shadow"><a href="#project">Project</a></li>
+            <li class="hvr-float-shadow"><a href="#footer">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--컨테이너 영역-->
+    <main id="container">
+      <!--메인비주얼-->
+      <div class="main_visual"></div>
+      <!--aboutme-->
+      <section class="Profile">
+        <div id="about" class="intro">
+          <h2>ABOUT ME</h2>
+          <strong>사용자 경험을 중심으로<br>
+          감성과 기능을 연결하는 웹디자이너 정해경입니다.</strong>
+          <p>디자인은 단순한 장식이 아닌, 사용자와의 대화라고 믿습니다.<br>
+          저는 그 대화를 더 따뜻하고, 더 직관적으로 만들기 위해 존재합니다.<br>
+          빠르게 변화하는 디지털 환경 속에서도 사용자 중심의 사고와 감각적인 표현을 잃지 않고,<br>
+          기술과 감성 사이의 균형을 지키는 디자이너로 성장하겠습니다.<br>
+          과거의 경험과 현재의 학습을 결합해 사용자의 편리성과 만족도를 높이며, 더 깊이 있는 디자인을 구현하고자 합니다.
+          </p>
+        </div>
+        <!--학력 및 경력-->
+        <div class="profile_section">
+          <div class="experience">
+            <h3>EXPERIENCE</h3>
+            <ul>
+              <li><span>2009.02 &#126; 2011.06</span>가구애드</li>
+              <li><span>2008.02 &#126; 2009.01</span>에디넷</li>
+              <li><span>2007.01 &#126; 2007.11</span>아이앤디</li>
+              <li><span>2006.10 &#126; 2007.01</span>아이에스닷컴</li>
+            </ul>
+          </div>
+          <div class="education">
+            <h3>EDUCATION</h3>
+            <ul>
+              <li>
+                <span>2025.04 &#126; 2025.11</span>&#91;K디지털&#93;실무 프로젝트기반 메타버스 플랫폼 콘텐츠 제작 수료<br>
+                <span class="indent">&#40;부산IT교육센터&#41;</span>
+              </li>
+              <li>
+                <span>2006.03 &#126; 2006.09</span>컴퓨터그래픽스 수료 &#40;부산IT교육센터&#41;
+              </li>
+              <li>
+                <span>1997.03 &#126; 2002.02</span>경성대학교 생활경영학과 졸업
+              </li>
+            </ul>
+          </div>       
+        </div>
+        <!--보유스킬-->
+        <div class="skill">
+          <h3>SKILL</h3>
+          <div class="skill-cont">
+            <div class="skill-column left">
+              <div class="skill-item">
+                <div class="skill-header">
+                  <p class="name">PHOTOSHOP</p>
+                  <p class="description">디자인 요구사항에 맞춰 효율적 작업 수행 및 창의적 작업 가능<br>
+                  &#40;웹페이지, 광고 배너, 팝업, 제품 상세페이지 작업&#41;</p>
+                </div>
+                <div class="bar-wrap">
+                  <div class="bar" data-percent="95"></div>
+                  <span class="percentage" data-percent="95">95%</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <p class="name">ILLUSTRATOR</p>
+                  <p class="description">다양한 기능을 조합해 창의적 작업 가능<br>
+                  &#40;BI, 브로슈어, 리플렛, 명함 작업&#41;</p>
+                </div>
+                <div class="bar-wrap">
+                  <div class="bar" data-percent="85"></div>
+                  <span class="percentage" data-percent="85">85%</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <p class="name">PREMIERE,<br>AFTER EFFECTS</p>
+                  <p class="description">다양한 기능 조합과 시각적 효과 구현 가능<br>
+                  &#40;홍보 영상 기획, 편집, 색보정, 자막 스타일링&#41;</p>
+                </div>
+                <div class="bar-wrap">
+                  <div class="bar" data-percent="75"></div>
+                  <span class="percentage" data-percent="75">75%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-column right">
+              <div class="skill-item">
+                <div class="skill-header">
+                  <p class="name">FIGMA</p>
+                  <p class="description">컴포넌트와 오토 레이아웃 활용 가능, 프로토타입 제작 가능<br>
+                  &#40;UI/UX 디자인&#41;</p>
+                </div>
+                <div class="bar-wrap">
+                  <div class="bar" data-percent="85"></div>
+                  <span class="percentage" data-percent="85">85%</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <p class="name">HTML,<br>CSS</p>
+                  <p class="description">레이아웃 구성 및 반응형 설계 가능<br>
+                  &#40;반응형 웹디자인 및 HTML5, CSS3, 미디어 쿼리 작업&#41;</p>
+                </div>
+                <div class="bar-wrap">
+                  <div class="bar" data-percent="90"></div>
+                  <span class="percentage" data-percent="90">90%</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <p class="name">JQUERY</p>
+                  <p class="description">jQuery 기본 문법과 선택자 사용 및 이벤트 처리,<br>애니메이션 활용가능</p>
+                </div>
+                <div class="bar-wrap">
+                  <div class="bar" data-percent="75"></div>
+                  <span class="percentage" data-percent="75">75%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>     
+      </section>
+      <!--프로젝트-->
+      <section id="project" class="project">
+        <h2>PROJECT</h2>
+        <ul class="project_inner">
+          <li>
+           <img src="images/project01.jpg" alt="웹사이트 미리보기">
+            <!--호버시 나타나는 내용-->
+            <div class="overlay">
+              <strong>디자인</strong>
+              <p>- 가독성 향상: 텍스트 대비 강화, 폰트 두께 조절, 배경 및 텍스트 색상 재조정<br>
+              - 메뉴 구조 개선: &#39;Nearby&#39;, &#39;About&#39; 등의 항목을 보다 명확한 카테고리로 재구성하여 네비게이션 직관성 향상</p><br>
+              <strong>콘텐츠</strong>
+              <p>- 브랜드 철학, 원료 이야기, 지속 가능성 등을 분리해 사용자 피로도 감소<br>
+              - 이벤트 및 프로모션 영역 강화:메인 배너에 슬라이드형 이벤트 영역을 추가해 시즌별<br>프로모션, 신제품 출시 등을 강조</p>
+              <em>기여도: 디자인100%, 퍼블리싱100%</em>
+              <div class="btn">
+                <a href="docs/hersteller_plan.pdf" target="_blank" class="btn_view">기획서 바로보기</a>
+                <a href="#" class="btn_visit">사이트로 이동하기</a>
+              </div>
+            </div>
+            <div class="info_area">
+              <span><img src="images/icon_personal.png" alt="개인작업"></span>
+              <strong>허스텔러 국문사이트 디자인</strong>
+              <p><b>web</b><i>|</i>디자인, 퍼블리싱, 풀페이지</p>
+            </div>
+          </li>
+          <li>
+            <img src="images/project02.jpg" alt="웹사이트 미리보기">
+            <!--호버시 나타나는 내용-->
+            <div class="overlay">
+              <strong>디자인</strong>
+              <p>- 서체 통일: 고딕 계열로 정리해 가독성과 브랜드 일관성 강화<br>
+              - 컬러 재정비: 그린·아이보리 톤으로 안정감 있고 세련된 분위기 연출<br>
+              - 레이아웃 개선: 열 배열에서 벗어나 그리드 형식으로 구성해 시각적 다양성과 사용성 향상</p><br>
+              <strong>콘텐츠</strong>
+              <p>- 메뉴 세분화: 브랜드 스토리, 가맹 안내, 이벤트 등 정보 추가로 접근성 향상<br>
+              - 정보 중심 구성: 이미지 위주의 콘텐츠에서 벗어나 텍스트 기반 정보 확대<br>
+              - 사용자 중심 콘텐츠: 고객 니즈를 반영한 실질적 정보 제공</p>
+              <em>기여도: 디자인100%, 퍼블리싱100%</em>
+              <div class="btn">
+                <a href="docs/alottogo_plan.pdf" target="_blank" class="btn_view">기획서 바로보기</a>
+                <a href="https://jeonghaekyung.github.io/alottogo/" target="_blank" class="btn_visit">사이트로 이동하기</a>
+              </div>
+            </div>
+            <div class="info_area">
+              <span><img src="images/icon_personal.png" alt="개인작업"></span>
+              <strong>어랏투고 메인페이지 리디자인</strong>
+              <p><b>web</b><i>|</i>디자인, 퍼블리싱, 영상편집, 반응형</p>
+            </div>
+          </li>
+          <li>
+            <img src="images/project03.jpg" alt="제작가이드 미리보기">
+            <!--호버시 나타나는 내용-->
+            <div class="overlay">
+              <strong>디자인</strong>
+              <p>- 단순한 실루엣과 절제된 컬러 사용으로 깔끔하고 세련된 이미지 전달<br>
+              - 여백의 미를 살린 레이아웃과 균형 잡힌 타이포그래피 적용<br>
+              - 브랜드 슬로건과 어울리는 따뜻하고 정감 있는 색감과 소재 활용</p><br>
+              <strong>콘텐츠</strong>
+              <p>- 전통적인 팥빙수의 맛과 멋을 현대적으로 풀어낸 메뉴 구성<br>
+              - 한옥의 소담함과 계절의 정취를 담은 공간 디자인<br>
+              - 온라인과 오프라인에서 동일한 감성과 메시지를 전달하는 디자인 시스템 구축</p>
+              <em>기여도: 디자인100%</em>
+              <div class="btn">
+                <a href="docs/branding_plan.pdf" target="_blank" class="btn_view">기획서 바로보기</a>
+                <a href="images/Hawoldang_guide.jpg" target="_blank" class="btn_visit">이미지 바로보기</a>
+              </div>
+            </div>
+            <div class="info_area">
+              <span><img src="images/icon_personal.png" alt="개인작업"></span>
+              <strong>하월당 브랜딩 디자인</strong>
+              <p><b>bx</b><i>|</i>BI, 명함, 리플렛, 간판</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <!--퀵 영역-->
+    <div id="btn_top">
+      <a href="#"><span><img src="images/btn_top.png" alt="상단으로 이동"></span></a>
+    </div>
+    <!--푸터영역-->
+    <footer id="footer">
+      <div class="footer_inner">
+        <div class="contact-title">
+          <h4>CONTACT</h4>
+          <span><img src="images/icon_arrow01.png" alt="화살표"></span>
+        </div>
+        <div class="info">
+          <p>디자인을 통해 문제를 해결하고, 가치를 더하는 디자이너가 되고 싶습니다.<br>
+          이 포트폴리오가 그 여정의 첫걸음이 되기를 바랍니다.</p>
+          <a href="mailto:basor79@naver.com" class="email">basor79@naver.com</a>
+        </div>              
+      </div>
+      <div class="copyright-section">
+        <p class="disclaimer">
+          본 사이트는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었으며, 사용된 일부 이미지 및 폰트는 별도의 출처가 있음을 알립니다.
+        </p>
+        <p class="copyright">
+          © 2025 JEONG_HAE_KYUNG. ALL RIGHTS RESERVED.
+        </p>
+      </div>
+    </footer>
+  </div>
+  <!-- Swiper JS-->
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/main.js"></script>  
+
+</body>
+
+</html>

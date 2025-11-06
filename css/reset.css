@@ -1,0 +1,26 @@
+@charset "UTF-8";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+strong,b,h1,h2,h3,h4,h5,h6{
+  font-weight: normal;
+}
+em,i,address{
+  font-style: normal;
+}
+ul,ol,li{
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+}
+button{
+  background-color:transparent;
+  border: 0;
+}
+a:link, a:visited, a:hover, a:active{
+  text-decoration: none;
+  color:#000;
+}
