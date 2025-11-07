@@ -1,2 +1,2 @@
 # portfolio
-정해경 포트폴리오입니다.
+정해경 portfolio입니다.
