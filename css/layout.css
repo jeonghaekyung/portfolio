@@ -76,38 +76,21 @@
 
 /*폰트 Hakgyoansim Gaeulsopung*/
 @font-face {
-  font-family: 'Hakgyoansim Gaeulsopung';
+  font-family: 'HakgyoansimGaeulsopung';
   src: url('../font/Hakgyoansim GaeulsopungL.woff2') format('woff2'),
-    url('../font/Hakgyoansim GaeulsopungL.woff') format('woff');
+    url('../font/HakgyoansimGaeulsopungL.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Hakgyoansim Gaeulsopung L';
-  src: url('../font/Hakgyoansim GaeulsopungL.woff2') format('woff2'),
-    url('../font/Hakgyoansim GaeulsopungL.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Hakgyoansim Gaeulsopung';
-  src: url('../font/Hakgyoansim GaeulsopungB.woff2') format('woff2'),
-    url('../font/Hakgyoansim GaeulsopungB.woff') format('woff');
+  font-family: 'HakgyoansimGaeulsopung';
+  src: url('../font/HakgyoansimGaeulsopungB.woff2') format('woff2'),
+    url('../font/HakgyoansimGaeulsopungB.woff') format('woff');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
-@font-face {
-  font-family: 'Hakgyoansim Gaeulsopung B';
-  src: url('../font/Hakgyoansim GaeulsopungB.woff2') format('woff2'),
-    url('../font/Hakgyoansim GaeulsopungB.woff') format('woff');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
 /*스크롤 부드럽게 처리*/
 html {
   scroll-behavior: smooth;
