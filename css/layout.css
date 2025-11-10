@@ -77,7 +77,7 @@
 /*폰트 Hakgyoansim Gaeulsopung*/
 @font-face {
   font-family: 'HakgyoansimGaeulsopung';
-  src: url('../font/Hakgyoansim GaeulsopungL.woff2') format('woff2'),
+  src: url('../font/HakgyoansimGaeulsopungL.woff2') format('woff2'),
     url('../font/HakgyoansimGaeulsopungL.woff') format('woff');
   font-weight: 300;
   font-style: normal;
