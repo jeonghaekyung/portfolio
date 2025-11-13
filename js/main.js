@@ -1,4 +1,4 @@
-/*모바일용 헤더
+/*모바일용 헤더*/
 $(function(){
      $(".btn_hamburger").click(function () {
        $(".mo_menu_container").toggleClass("open");
@@ -11,7 +11,7 @@ $(function(){
      $(".mo_gnb ul > li").click(function(){
        $(this).find(".depth02").stop().slideToggle();
      });
-   });*/
+   });
 
 /*스킬바 효과버튼*/
 document.addEventListener('DOMContentLoaded', () => {
