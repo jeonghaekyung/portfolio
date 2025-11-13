@@ -1,6 +1,12 @@
 @charset "UTF-8";
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 @media (hover: hover) {
+
   #header .header_inner #gnb>ul>li a:hover {
     color: #000;
   }
@@ -133,7 +139,7 @@
     z-index: 200;
     width: 85%;
     height: 100vh;
-    padding: 60px 50px;
+    padding: 60px 30px;
     background-color: #444;
     transform: translateX(100%);
     transition: 0.3s ease-out;
@@ -165,14 +171,16 @@
 /*breakpoint 480*/
 @media screen and (max-width: 480px) {
 
+  /*메인비주얼*/
   #container .main_visual {
     height: 40vh;
     background-position: center center;
     background-size: cover;
   }
 
+  /*aboutme*/
   #container .profile {
-    margin: 40px auto;
+    margin: 40px auto 30px;
     padding: 0 20px;
     width: 100%;
   }
@@ -182,7 +190,7 @@
   }
 
   #container .profile .intro h2 {
-    margin-bottom: 18px;
+    margin-bottom: 14px;
     font-size: 2.8rem;
   }
 
@@ -199,19 +207,314 @@
     word-break: keep-all;
   }
 
-  #container .profile .intro p br{
+  #container .profile .intro p br {
     display: none;
   }
 
-  #container .profile .profile_section{
+  /*경력 및 학력*/
+  #container .profile .profile_section {
     display: block;
+    margin-top: 8px;
+    font-size: 1.4rem;
   }
-  #container .profile .profile_section .experience h3{
+
+  #container .profile .profile_section .experience h3 {
+    padding-bottom: 6px;
+    font-size: 2.6rem;
+  }
+
+  #container .profile .profile_section .education h3 {
+    padding: 20px 0 6px;
+    font-size: 2.6rem;
+  }
+
+  #container .profile .profile_section span {
+    width: 150px;
+  }
+
+  #container .profile .profile_section li>div {
+    max-width: 60%;
+  }
+
+  #container .profile .profile_section li {
+    padding: 3px 0;
+  }
+
+  #container .profile .profile_section li br {
+    display: none;
+  }
+
+  /*보유스킬*/
+  #container .profile .skill h3 {
+    padding: 20px 0 12px;
+    font-size: 2.6rem;
+  }
+
+  #container .profile .skill .skill-cont {
+    gap: 0;
+  }
+
+  #container .profile .skill .skill-cont .skill-column {
+    min-width: 100%;
+  }
+
+  #container .profile .skill .skill-cont .skill-column .skill-item {
+    margin-bottom: 42px;
+  }
+
+  #container .profile .skill .skill-cont .skill-column strong {
+    font-size: 1.6rem;
+    line-height: 20px;
+  }
+
+  #container .profile .skill .skill-cont .skill-column .description {
+    padding-left: 20px;
+  }
+
+  #container .profile .skill .skill-cont .skill-column p {
+    font-size: 1.4rem;
+  }
+
+  #container .profile .skill .skill-cont .skill-item .bar-wrap {
+    margin-top: 12px;
+    height: 8px;
+  }
+
+  /*프로젝트*/
+  #container .project {
+    padding: 40px 20px 10px;
+  }
+
+  #container .project h2 {
+    margin-bottom: 20px;
     font-size: 2.8rem;
   }
 
-  #container .profile .profile_section .education h3{
-    font-size: 2.8rem;
+  #container .project .project_inner {
+    display: block;
+    width: 100%;
+  }
+
+  #container .project .project_inner li>img {
+    width: 100%;
+  }
+
+  #container .project .project_inner .info_area span {
+    display: block;
+    padding: 20px 0 5px;
+  }
+
+  #container .project .project_inner .info_area strong {
+    font-size: 1.8rem;
+  }
+
+  #container .project .project_inner .info_area {
+    margin-bottom: 20px;
+  }
+
+  #container .project .project_inner .info_area b {
+    font-size: 1.6rem;
+  }
+
+  #container .project .project_inner .info_area i {
+    padding: 0 10px 3px 6px;
+    font-size: 1.2rem;
+  }
+
+  #container .project .project_inner .info_area p {
+    font-size: 1.6rem;
+    line-height: 22px;
+  }
+
+
+  /*프로젝트 이미지 호버시 나타나는 내용*/
+  #container .project .project_inner li .overlay {
+    padding: 20px;
+    width: 100%;
+    height: 298px;
+    font-weight: 300;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.85);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 10;
+  }
+
+  #container .project .project_inner .overlay strong {
+    font-size: 1.4rem;
+    line-height: 24px;
+  }
+
+  #container .project .project_inner .overlay p {
+    font-size: 1.2rem;
+    line-height: 20px;
+  }
+
+  #container .project .project_inner .overlay p br {
+    display: none;
+  }
+
+  #container .project .project_inner .overlay em {
+    padding: 10px 0;
+    font-size: 1.4rem;
+  }
+
+  #container .project .project_inner .overlay>.btn>a {
+    padding: 4px 12px 3px;
+    font-size: 1.2rem;
+  }
+
+  #container .project .project_inner .overlay>.btn>a:hover {
+    padding: 4px 12px 3px;
+    font-size: 1.2rem;
+  }
+
+  /*그래픽디자인 영역*/
+  #container .project .graphic_container {
+    margin: 60px auto;
+  }
+
+  #container .project .graphic_container ul {
+    display: block;
+  }
+
+  #container .project .graphic_container h3 {
+    margin-bottom: 14px;
+    font-size: 2.6rem;
+    font-weight: 800;
+  }
+
+  #container .project .graphic_container i {
+    font-size: 1.8rem;
+    line-height: 12px;
+  }
+
+  #container .project .graphic_container ul img {
+    width: 100%;
+  }
+
+  /*그래픽 이미지 호버시-허스텔러*/
+  #container .project .promo_hersteller li {
+    margin-bottom: 12px;
+  }
+
+  #container .project .promo_hersteller li .overlay {
+    padding: 40px;
+    width: 100%;
+    height: 212px;
+  }
+
+  #container .project .promo_hersteller .overlay strong {
+    font-size: 1.8rem;
+    line-height: 30px;
+  }
+
+  #container .project .promo_hersteller .overlay p {
+    margin-top: 0px;
+    font-size: 1.4rem;
+    line-height: 22px;
+  }
+
+  #container .project .promo_hersteller .overlay em {
+    padding: 15px 0;
+    font-size: 1.4rem;
+  }
+
+  #container .project .promo_hersteller .overlay>.btn>a {
+    padding: 4px 12px 3px;
+    font-size: 1.2rem;
+  }
+
+  #container .project .promo_hersteller .overlay>.btn>a:hover {
+    padding: 4px 16px 3px;
+    font-size: 1.2rem;
+  }
+
+  #container .project .graphic_container .promo_alot {
+    position: relative;
+    display: block;
+    text-align: center;
+  }
+
+  #container .project .graphic_container .promo_alot>div {
+    margin-bottom: 12px;
+  }
+
+  /*그래픽 이미지 호버시-어랏투고*/
+  #container .project .promo_alot .overlay {
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 40px;
+    max-width: 344px;
+    width: 100%;
+  }
+
+  #container .project .promo_alot .overlay strong {
+    font-size: 1.8rem;
+    line-height: 30px;
+  }
+
+  #container .project .promo_alot .overlay p {
+    margin-top: 100px;
+    font-size: 1.4rem;
+    line-height: 22px;
+  }
+
+  #container .project .promo_alot .overlay em {
+    padding: 15px 0;
+    font-size: 1.4rem;
+  }
+
+  #container .project .promo_alot .overlay>.btn>a {
+    padding: 4px 12px 3px;
+    font-size: 1.2rem;
+  }
+
+  #container .project .promo_alot .overlay>.btn>a:hover {
+    padding: 4px 16px 3px;
+    font-size: 1.2rem;
+  }
+
+  /*퀵 영역*/
+
+  #btn_top {
+    width: 50%;
+    right: 0;
+    bottom: 0;
+  }
+
+  /*푸터 영역*/
+  #footer {
+    padding: 24px 20px;
+  }
+
+  #footer .footer_inner {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  #footer .footer_inner .contact-title {
+    display: none;
+  }
+
+  #footer .footer_inner .info p {
+    font-size: 1.2rem;
+  }
+
+  #footer .footer_inner .info a {
+    font-size: 2.4rem;
+  }
+
+  #footer .copyright-section {
+    margin-top: 12px;
+  }
+
+  #footer .copyright-section .disclaimer,
+  #footer .copyright-section .copyright {
+    font-size: 1.2rem;
+    line-height: 16px;
+    word-break: keep-all;
   }
 
 }
