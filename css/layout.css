@@ -9,6 +9,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'S-Core Dream';
   src: url('../font/S-CoreDream-2ExtraLight.woff2') format('woff2'),
@@ -17,6 +18,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'S-Core Dream';
   src: url('../font/S-CoreDream-3Light.woff2') format('woff2'),
@@ -25,6 +27,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'S-Core Dream';
   src: url('../font/S-CoreDream-4Regular.woff2') format('woff2'),
@@ -33,6 +36,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'S-Core Dream';
   src: url('../font/S-CoreDream-5Medium.woff2') format('woff2'),
@@ -41,6 +45,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'S-Core Dream';
   src: url('../font/S-CoreDream-6Bold.woff2') format('woff2'),
@@ -49,6 +54,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'S-Core Dream';
   src: url('../font/S-CoreDream-7ExtraBold.woff2') format('woff2'),
@@ -57,6 +63,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'S-Core Dream 8';
   src: url('../font/S-CoreDream-8Heavy.woff2') format('woff2'),
@@ -65,6 +72,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'S-Core Dream';
   src: url('../font/S-CoreDream-9Black.woff2') format('woff2'),
@@ -83,6 +91,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Hakgyoansim Gaeulsopung';
   src: url('../font/HakgyoansimGaeulsopungB.woff2') format('woff2'),
@@ -91,6 +100,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 /*스크롤 부드럽게 처리*/
 html {
   scroll-behavior: smooth;
@@ -109,7 +119,7 @@ body {
 }
 
 /*헤더영역*/
-#header { 
+#header {
   position: absolute;
   top: 0;
   left: 0;
@@ -117,16 +127,19 @@ body {
   padding: 34px 60px;
   z-index: 100;
 }
-#header .header_inner {  
+
+#header .header_inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  max-width: 1800px;  
+  max-width: 1800px;
 }
+
 #header .header_inner h1 a {
   display: block;
 }
+
 #header .header_inner h1 img {
   line-height: 0;
 }
@@ -138,16 +151,19 @@ body {
   align-items: center;
   column-gap: 40px;
 }
-#header .header_inner #gnb>ul>li a{
+
+#header .header_inner #gnb>ul>li a {
   display: block;
   font-size: 1.8rem;
   font-weight: 600;
   color: #444;
   text-transform: uppercase;
 }
-#header .header_inner #gnb>ul>li a:hover{
+
+#header .header_inner #gnb>ul>li a:hover {
   color: #000;
 }
+
 /* Float Shadow */
 .hvr-float-shadow {
   display: inline-block;
@@ -161,6 +177,7 @@ body {
   -webkit-transition-property: transform;
   transition-property: transform;
 }
+
 .hvr-float-shadow:before {
   pointer-events: none;
   position: absolute;
@@ -179,127 +196,161 @@ body {
   -webkit-transition-property: transform, opacity;
   transition-property: transform, opacity;
 }
-.hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+
+.hvr-float-shadow:hover,
+.hvr-float-shadow:focus,
+.hvr-float-shadow:active {
   -webkit-transform: translateY(-5px);
   transform: translateY(-5px);
   /* move the element up by 5px */
 }
-.hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
+
+.hvr-float-shadow:hover:before,
+.hvr-float-shadow:focus:before,
+.hvr-float-shadow:active:before {
   opacity: 1;
   -webkit-transform: translateY(5px);
   transform: translateY(5px);
   /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
 }
 
+/*모바일용 헤더*/
+#header .header_inner .btn_hamburger,
+#header .header_inner .mo_menu_container{
+  display: none;
+}
+
 /*메인비주얼*/
-#container .main_visual{
+#container .main_visual {
   position: relative;
   width: 100%;
   height: 1080px;
   background: url(../images/main_visual.jpg) no-repeat center top;
   background-size: contain;
 }
+
 /*aboutme*/
-#container .Profile{
+#container .profile {
   margin: 170px auto 150px;
   width: 1440px;
 }
-#container .Profile .intro{
+
+#container .profile .intro {
   background: url(../images/img_character.png) no-repeat right top;
 }
-#container .Profile .intro h2{
+
+#container .profile .intro h2 {
   margin-bottom: 34px;
   font-size: 6.4rem;
   font-weight: 600;
   color: #222;
 }
-#container .Profile .intro strong{
+
+#container .profile .intro strong {
   font-family: 'Hakgyoansim Gaeulsopung';
   font-size: 4.2rem;
   font-weight: 600;
   color: #1E257F;
   line-height: 44px;
 }
-#container .Profile .intro p{
+
+#container .profile .intro p {
   padding: 24px 0;
   font-size: 2.0rem;
   line-height: 38px;
 }
+
 /*경력 및 학력*/
-#container .Profile .profile_section{
+#container .profile .profile_section {
   display: flex;
   justify-content: space-between;
   margin-top: 110px;
   font-size: 1.8rem;
 }
-#container .Profile .profile_section>div{
+
+#container .profile .profile_section>div {
   flex: 1;
 }
-#container .Profile .profile_section h3{
+
+#container .profile .profile_section h3 {
   padding-bottom: 17px;
   font-size: 4.0rem;
   font-weight: 600;
   color: #333;
 }
-#container .Profile .profile_section span{
+
+#container .profile .profile_section span {
   display: inline-block;
   width: 200px;
   font-family: 'S-Core Dream';
 }
-#container .Profile .profile_section li{
+
+#container .profile .profile_section li {
   padding: 5px 0;
 }
-#container .Profile .profile_section .education li:first-child{
+
+#container .profile .profile_section .education li:first-child {
   display: flex;
 }
+
 /*보유스킬*/
-#container .Profile .skill h3{
-  padding:100px 0 22px;
+#container .profile .skill h3 {
+  padding: 100px 0 22px;
   font-size: 4.0rem;
   font-weight: 600;
   color: #333;
 }
-#container .Profile .skill .skill-cont{
+
+#container .profile .skill .skill-cont {
   display: flex;
   gap: 82px;
   flex-wrap: wrap;
 }
-#container .Profile .skill .skill-cont .skill-column{
+
+#container .profile .skill .skill-cont .skill-column {
   flex: 1 1 35%;
   min-width: 678px;
 }
-#container .Profile .skill .skill-cont .skill-column .skill-item{
+
+#container .profile .skill .skill-cont .skill-column .skill-item {
   margin-bottom: 60px;
 }
-#container .Profile .skill .skill-cont .skill-column .skill-item .skill-header{
+
+#container .profile .skill .skill-cont .skill-column .skill-item .skill-header {
   display: flex;
   align-items: flex-start;
 }
-#container .Profile .skill .skill-cont .skill-column strong{  
+
+#container .profile .skill .skill-cont .skill-column strong {
   font-size: 2.0rem;
   font-weight: 600;
   line-height: 27px;
 }
-#container .Profile .skill .skill-cont .skill-column .description{
+
+#container .profile .skill .skill-cont .skill-column .description {
   padding-left: 30px;
 }
-#container .Profile .skill .skill-cont .skill-column p{
+
+#container .profile .skill .skill-cont .skill-column p {
   font-size: 1.8rem;
 }
-#container .Profile .skill .skill-cont .skill-item .bar-wrap{
+
+#container .profile .skill .skill-cont .skill-item .bar-wrap {
   position: relative;
   margin-top: 20px;
   background-color: #D9D9D9;
   height: 12px;
   overflow: visible;
 }
-#container .Profile .skill .skill-cont .skill-item .bar-wrap .bar{
+
+#container .profile .skill .skill-cont .skill-item .bar-wrap .bar {
   height: 100%;
   background-color: #669AFF;
-  width: 0; 
+  width: 0;
   transition: width 1.5s ease-out;
 }
-#container .Profile .skill .skill-cont .skill-item .bar-wrap .percentage{
+
+#container .profile .skill .skill-cont .skill-item .bar-wrap .percentage {
   position: absolute;
   top: 22px;
   right: 0;
@@ -307,25 +358,30 @@ body {
   opacity: 0;
   transition: opacity 0.5s ease-in-out 1.2s;
   z-index: 10;
-  white-space: nowrap; /* 글자가 잘리지 않도록 */
+  white-space: nowrap;
+  /* 글자가 잘리지 않도록 */
 }
-#container .Profile .skill .skill-cont .skill-item .bar-wrap.animated .percentage{
+
+#container .profile .skill .skill-cont .skill-item .bar-wrap.animated .percentage {
   opacity: 1;
 }
+
 /*프로젝트*/
-#container .project{
+#container .project {
   padding: 100px 0 110px;
   width: 100%;
   background-color: #F4FAFD;
 }
-#container .project h2{
+
+#container .project h2 {
   margin-bottom: 86px;
   font-size: 6.4rem;
   font-weight: 700;
   color: #222;
   text-align: center;
 }
-#container .project .project_inner{
+
+#container .project .project_inner {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -333,40 +389,48 @@ body {
   margin: 0 auto;
   width: 1440px;
 }
-#container .project .project_inner li{
-  position: relative;  
+
+#container .project .project_inner li {
+  position: relative;
   width: calc(100% - 24px)/2;
 }
-#container .project .project_inner li img{
+
+#container .project .project_inner li img {
   display: block;
   cursor: pointer;
 }
-#container .project .project_inner .info_area span{
+
+#container .project .project_inner .info_area span {
   display: block;
   padding: 40px 0 10px;
 }
-#container .project .project_inner .info_area strong{
+
+#container .project .project_inner .info_area strong {
   font-size: 2.8rem;
   font-weight: 500;
   color: #333;
 }
-#container .project .project_inner .info_area b{
+
+#container .project .project_inner .info_area b {
   font-size: 2.4rem;
   font-weight: 600;
   text-transform: uppercase;
 }
-#container .project .project_inner .info_area i{
+
+#container .project .project_inner .info_area i {
   padding: 0 15px 5px 8px;
   font-size: 1.5rem;
   font-weight: 300;
   vertical-align: middle;
 }
-#container .project .project_inner .info_area p{
+
+#container .project .project_inner .info_area p {
   font-size: 2.2rem;
   line-height: 28px;
 }
+
 /*프로젝트 이미지 호버시 나타나는 내용*/
-#container .project .project_inner li .overlay{
+#container .project .project_inner li .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -380,29 +444,35 @@ body {
   transition: opacity 0.3s ease-in-out;
   z-index: 10;
 }
-#container .project .project_inner li:hover .overlay{
+
+#container .project .project_inner li:hover .overlay {
   opacity: 1;
 }
-#container .project .project_inner .overlay strong{
+
+#container .project .project_inner .overlay strong {
   font-size: 2.0rem;
   font-weight: 500;
   line-height: 40px;
 }
-#container .project .project_inner .overlay p{
+
+#container .project .project_inner .overlay p {
   font-size: 1.5rem;
   line-height: 26px;
 }
-#container .project .project_inner .overlay em{
+
+#container .project .project_inner .overlay em {
   display: block;
   padding: 15px 0 44px;
   font-size: 1.8rem;
 }
-#container .project .project_inner .overlay>.btn{
+
+#container .project .project_inner .overlay>.btn {
   display: flex;
   justify-content: center;
   gap: 6px;
 }
-#container .project .project_inner .overlay>.btn>a{
+
+#container .project .project_inner .overlay>.btn>a {
   display: inline-block;
   padding: 8px 22px 6px;
   font-size: 1.6rem;
@@ -412,7 +482,8 @@ body {
   background-color: #fff;
   border: 1px solid #2BA59C;
 }
-#container .project .project_inner .overlay>.btn>a:hover{
+
+#container .project .project_inner .overlay>.btn>a:hover {
   display: inline-block;
   padding: 8px 22px 6px;
   font-size: 1.6rem;
@@ -422,43 +493,50 @@ body {
   border: 1px solid #2BA59C;
   transition: 0.3s linear;
 }
+
 /*그래픽디자인 영역*/
-#container .project .graphic_container{
+#container .project .graphic_container {
   margin: 100px auto;
   max-width: 1440px;
-  width: 100%;  
+  width: 100%;
 }
-#container .project .graphic_container h3{
+
+#container .project .graphic_container h3 {
   margin-bottom: 40px;
   font-size: 4.8rem;
   font-weight: 800;
   text-align: center;
   text-transform: uppercase;
 }
-#container .project .graphic_container i{
+
+#container .project .graphic_container i {
   display: block;
   font-size: 2.8rem;
   color: #666;
   text-align: center;
   line-height: 22px;
 }
-#container .project .graphic_container ul{
+
+#container .project .graphic_container ul {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 24px;  
+  gap: 24px;
 }
-#container .project .graphic_container ul li{
+
+#container .project .graphic_container ul li {
   position: relative;
   width: calc(100% - 24px)/2;
 }
-#container .project .graphic_container ul img{
+
+#container .project .graphic_container ul img {
   display: block;
   width: 708px;
   height: auto;
 }
+
 /*그래픽 이미지 호버시-허스텔러*/
-#container .project .promo_hersteller li .overlay{
+#container .project .promo_hersteller li .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -473,30 +551,36 @@ body {
   transition: opacity 0.3s ease-in-out;
   z-index: 10;
 }
-#container .project .promo_hersteller li:hover .overlay{
+
+#container .project .promo_hersteller li:hover .overlay {
   opacity: 1;
 }
-#container .project .promo_hersteller .overlay strong{
+
+#container .project .promo_hersteller .overlay strong {
   font-size: 2.2rem;
   font-weight: 500;
   line-height: 50px;
 }
-#container .project .promo_hersteller .overlay p{
+
+#container .project .promo_hersteller .overlay p {
   margin-top: 30px;
   font-size: 1.8rem;
   line-height: 26px;
 }
-#container .project .promo_hersteller .overlay em{
+
+#container .project .promo_hersteller .overlay em {
   display: block;
   padding: 15px 0 36px;
   font-size: 1.8rem;
 }
-#container .project .promo_hersteller .overlay>.btn{
+
+#container .project .promo_hersteller .overlay>.btn {
   display: flex;
   justify-content: center;
   gap: 6px;
 }
-#container .project .promo_hersteller .overlay>.btn>a{
+
+#container .project .promo_hersteller .overlay>.btn>a {
   display: inline-block;
   padding: 8px 22px 6px;
   font-size: 1.6rem;
@@ -506,7 +590,8 @@ body {
   background-color: #fff;
   border: 1px solid #2BA59C;
 }
-#container .project .promo_hersteller .overlay>.btn>a:hover{
+
+#container .project .promo_hersteller .overlay>.btn>a:hover {
   display: inline-block;
   padding: 8px 22px 6px;
   font-size: 1.6rem;
@@ -516,21 +601,25 @@ body {
   border: 1px solid #2BA59C;
   transition: 0.3s linear;
 }
-#container .project .graphic_container .promo_alot{
+
+#container .project .graphic_container .promo_alot {
   display: flex;
   justify-content: space-between;
   margin: 30px auto 0;
   max-width: 1440px;
   width: 100%;
 }
-#container .project .graphic_container .promo_alot img{
+
+#container .project .graphic_container .promo_alot img {
   height: 425px;
 }
-#container .project .graphic_container .promo_alot>div{
+
+#container .project .graphic_container .promo_alot>div {
   position: relative;
 }
+
 /*그래픽 이미지 호버시-어랏투고*/
-#container .project .promo_alot .overlay{
+#container .project .promo_alot .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -545,29 +634,35 @@ body {
   transition: opacity 0.3s ease-in-out;
   z-index: 10;
 }
-#container .project .promo_alot div:hover .overlay{
+
+#container .project .promo_alot div:hover .overlay {
   opacity: 1;
 }
-#container .project .promo_alot .overlay strong{
+
+#container .project .promo_alot .overlay strong {
   font-size: 2.2rem;
   font-weight: 500;
   line-height: 50px;
 }
-#container .project .promo_alot .overlay p{
+
+#container .project .promo_alot .overlay p {
   font-size: 1.8rem;
   line-height: 26px;
 }
-#container .project .promo_alot .overlay em{
+
+#container .project .promo_alot .overlay em {
   display: block;
   padding: 15px 0 36px;
   font-size: 1.8rem;
 }
-#container .project .promo_alot .overlay>.btn{
+
+#container .project .promo_alot .overlay>.btn {
   display: flex;
   justify-content: center;
   gap: 6px;
 }
-#container .project .promo_alot .overlay>.btn>a{
+
+#container .project .promo_alot .overlay>.btn>a {
   display: inline-block;
   padding: 8px 22px 6px;
   font-size: 1.6rem;
@@ -577,7 +672,8 @@ body {
   background-color: #fff;
   border: 1px solid #2BA59C;
 }
-#container .project .promo_alot .overlay>.btn>a:hover{
+
+#container .project .promo_alot .overlay>.btn>a:hover {
   display: inline-block;
   padding: 8px 22px 6px;
   font-size: 1.6rem;
@@ -589,56 +685,67 @@ body {
 }
 
 /*퀵 영역*/
-#btn_top{
+#btn_top {
   position: fixed;
   right: 5px;
   bottom: 10px;
   z-index: 50;
 }
+
 /*푸터 영역*/
-#footer{
+#footer {
   padding: 48px 0 30px;
   background-color: #BCC5C9;
 }
-#footer .footer_inner{
+
+#footer .footer_inner {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  width: 850px; 
+  width: 850px;
 }
-#footer .footer_inner .contact-title{
+
+#footer .footer_inner .contact-title {
   display: flex;
   align-items: center;
 }
-#footer .footer_inner .contact-title h4{
+
+#footer .footer_inner .contact-title h4 {
   margin-right: 14px;
   font-size: 3.6rem;
   font-weight: 500;
   color: #222;
 }
-#footer .footer_inner .contact-title span{
+
+#footer .footer_inner .contact-title span {
   display: inline-block;
 }
-#footer .footer_inner .contact-title img{
+
+#footer .footer_inner .contact-title img {
   width: 30px;
   height: 30px;
   line-height: 0;
 }
-#footer .footer_inner .info p{
+
+#footer .footer_inner .info p {
   font-size: 1.5rem;
 }
-#footer .footer_inner .info a{
+
+#footer .footer_inner .info a {
   font-size: 4.0rem;
   font-weight: 600;
   color: #222;
 }
-#footer .copyright-section{
+
+#footer .copyright-section {
   margin-top: 24px;
   text-align: center;
 }
-#footer .copyright-section .disclaimer{
+
+#footer .copyright-section .disclaimer {
   font-size: 1.5rem;
 }
-#footer .copyright-section .copyright{
+
+#footer .copyright-section .copyright {
   font-size: 1.5rem;
 }

@@ -1,0 +1,217 @@
+@charset "UTF-8";
+
+@media (hover: hover) {
+  #header .header_inner #gnb>ul>li a:hover {
+    color: #000;
+  }
+
+  .hvr-float-shadow:hover,
+  .hvr-float-shadow:focus,
+  .hvr-float-shadow:active {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    /* move the element up by 5px */
+  }
+
+  .hvr-float-shadow:hover:before,
+  .hvr-float-shadow:focus:before,
+  .hvr-float-shadow:active:before {
+    opacity: 1;
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+    /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+  }
+
+  #container .project .project_inner li:hover .overlay {
+    opacity: 1;
+  }
+
+  #container .project .project_inner .overlay>.btn>a:hover {
+    display: inline-block;
+    padding: 8px 22px 6px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #2BA59C;
+    border: 1px solid #2BA59C;
+    transition: 0.3s linear;
+  }
+
+  #container .project .promo_hersteller li:hover .overlay {
+    opacity: 1;
+  }
+
+  #container .project .promo_hersteller .overlay>.btn>a:hover {
+    display: inline-block;
+    padding: 8px 22px 6px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #2BA59C;
+    border: 1px solid #2BA59C;
+    transition: 0.3s linear;
+  }
+
+  #container .project .promo_alot div:hover .overlay {
+    opacity: 1;
+  }
+
+  #container .project .promo_alot .overlay>.btn>a:hover {
+    display: inline-block;
+    padding: 8px 22px 6px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #2BA59C;
+    border: 1px solid #2BA59C;
+    transition: 0.3s linear;
+  }
+}
+
+@media (max-width: 768px) {
+
+  #header {
+    padding: 20px 20px;
+    height: 60px;
+  }
+
+  #header .header_inner h1 img {
+    width: 70%;
+  }
+
+  #header .header_inner #gnb {
+    display: none;
+  }
+
+  /* 2-3. 햄버거 버튼 및 모바일 메뉴 활성화 */
+  #header .header_inner .btn_hamburger {
+    position: absolute;
+    right: 20px;
+    top: 34%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 20px;
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+    z-index: 210;
+  }
+
+  #header .header_inner .btn_hamburger {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  #header .header_inner .btn_hamburger span {
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    transition: 0.3s;
+  }
+
+  #header .btn_hamburger.open span:first-child {
+    transform: translateY(9px) rotate(45deg);
+    background-color: #fff;
+  }
+
+  #header .btn_hamburger.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  #header .btn_hamburger.open span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+    background-color: #fff;
+  }
+
+  #header .header_inner .mo_menu_container {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 200;
+    width: 85%;
+    height: 100vh;
+    padding: 60px 50px;
+    background-color: #444;
+    transform: translateX(100%);
+    transition: 0.3s ease-out;
+  }
+
+  #header .header_inner .mo_menu_container.open {
+    transform: translateX(0);
+  }
+
+  #header .header_inner .mo_menu_container .mo_gnb>ul>li {
+    padding-bottom: 12px;
+  }
+
+  #header .header_inner .mo_menu_container .mo_gnb ul>li a {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  #container .main_visual {
+    height: 50vh;
+    background-position: center center;
+    background-size: cover;
+  }
+}
+
+/*breakpoint 480*/
+@media screen and (max-width: 480px) {
+
+  #container .main_visual {
+    height: 40vh;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  #container .profile {
+    margin: 40px auto;
+    padding: 0 20px;
+    width: 100%;
+  }
+
+  #container .profile .intro {
+    background: none;
+  }
+
+  #container .profile .intro h2 {
+    margin-bottom: 18px;
+    font-size: 2.8rem;
+  }
+
+  #container .profile .intro strong {
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 30px;
+  }
+
+  #container .profile .intro p {
+    padding: 14px 0;
+    font-size: 1.4rem;
+    line-height: 26px;
+    word-break: keep-all;
+  }
+
+  #container .profile .intro p br{
+    display: none;
+  }
+
+  #container .profile .profile_section{
+    display: block;
+  }
+  #container .profile .profile_section .experience h3{
+    font-size: 2.8rem;
+  }
+
+  #container .profile .profile_section .education h3{
+    font-size: 2.8rem;
+  }
+
+}
