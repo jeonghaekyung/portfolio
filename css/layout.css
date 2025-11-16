@@ -115,6 +115,7 @@ body {
 }
 
 #wrap {
+  position: relative;
   overflow-x: hidden;
 }
 
@@ -125,7 +126,7 @@ body {
   left: 0;
   width: 100%;
   padding: 34px 60px;
-  z-index: 100;
+  z-index: 220;
 }
 
 #header .header_inner {
@@ -226,7 +227,7 @@ body {
   width: 100%;
   height: 1080px;
   background: url(../images/main_visual.jpg) no-repeat center top;
-  background-size: contain;
+  background-size: cover;
 }
 
 /*aboutme*/
@@ -689,10 +690,13 @@ body {
 #btn_top {
   position: fixed;
   right: 5px;
-  bottom: 10px;
-  max-width: 74px;
-  width: 100%;
-  z-index: 50;
+  bottom: 5px;
+  width: 74px;
+  z-index: 1000;
+}
+
+#btn_top a, #btn_top span, #btn_top img{
+  display: block;
 }
 
 /*푸터 영역*/
