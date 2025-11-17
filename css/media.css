@@ -823,6 +823,7 @@ body {
   #container .project .project_inner li .overlay {
     padding: 20px;
     height: 75%;
+    overflow-y: auto;
   }
 
   #container .project .project_inner .overlay strong {
@@ -833,10 +834,6 @@ body {
   #container .project .project_inner .overlay p {
     font-size: 1.2rem;
     line-height: 20px;
-  }
-
-  #container .project .project_inner .overlay p br {
-    display: none;
   }
 
   #container .project .project_inner .overlay em {
