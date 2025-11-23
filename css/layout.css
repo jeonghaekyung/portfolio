@@ -498,7 +498,7 @@ body {
 
 /*그래픽디자인 영역*/
 #container .project .graphic_container {
-  margin: 100px auto;
+  margin: 130px auto 100px;
   max-width: 1440px;
   width: 100%;
 }
