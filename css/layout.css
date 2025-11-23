@@ -428,6 +428,7 @@ body {
 #container .project .project_inner .info_area p {
   font-size: 2.2rem;
   line-height: 28px;
+  text-transform: uppercase;
 }
 
 /*프로젝트 이미지 호버시 나타나는 내용*/
@@ -463,7 +464,7 @@ body {
 
 #container .project .project_inner .overlay em {
   display: block;
-  padding: 15px 0 44px;
+  padding: 15px 0 32px;
   font-size: 1.8rem;
 }
 
