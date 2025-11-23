@@ -8,7 +8,7 @@ body {
 @media (hover: hover) {
 
   #header .header_inner #gnb>ul>li a:hover {
-    color: #111
+    color: #222
   }
 
   .hvr-float-shadow:hover,
