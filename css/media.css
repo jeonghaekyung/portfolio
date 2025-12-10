@@ -43,11 +43,11 @@ body {
     transition: 0.3s linear;
   }
 
-  #container .project .promo_hersteller li:hover .overlay {
+  #container .project .graphic_container .promo_hersteller li:hover .overlay {
     opacity: 1;
   }
 
-  #container .project .promo_hersteller .overlay>.btn>a:hover {
+  #container .project .graphic_container .promo_hersteller .overlay>.btn>a:hover {
     display: inline-block;
     padding: 8px 22px 6px;
     font-size: 1.6rem;
@@ -148,13 +148,21 @@ body {
     max-width: 1368px;
   }
 
-  #container .project .graphic_container ul img {
+  /*그래픽-허스텔러*/
+  #container .project .graphic_container .promo_hersteller img {
     width: 672px;
     height: auto;
   }
 
+  /*그래픽 이미지 호버시-허스텔러*/
+  #container .project .graphic_container .promo_hersteller li .overlay {
+    padding: 38px 63px 50px;
+    height: 324px;
+  }
+
+  /*그래픽-어랏투고*/
   #container .project .graphic_container .promo_alot {
-    margin: 30px auto 0;
+    margin: 24px auto 0;
     max-width: 1368px;
     width: 100%;
   }
@@ -219,7 +227,12 @@ body {
 
   #container .project .project_inner {
     display: block;
-    width: 708px;
+  }
+
+  #container .project .project_inner li {
+    margin: 0 auto;
+    max-width: 708px;
+    width: 100%;
   }
 
   #container .project .project_inner li>img {
@@ -261,28 +274,29 @@ body {
     width: 100%;
   }
 
-  #container .project .graphic_container ul img {
+  /*그래픽-허스텔러*/
+  #container .project .graphic_container .promo_hersteller img {
     width: 592px;
   }
 
   /*그래픽 이미지 호버시-허스텔러*/
-  #container .project .promo_hersteller li .overlay {
+  #container .project .graphic_container .promo_hersteller li .overlay {
     padding: 30px;
     max-width: 592px;
     width: 100%;
     height: 285px;
   }
 
-  #container .project .promo_hersteller .overlay p {
+  #container .project .graphic_container .promo_hersteller .overlay p {
     margin-top: 20px;
   }
 
-  #container .project .promo_hersteller .overlay em {
+  #container .project .graphic_container .promo_hersteller .overlay em {
     padding: 15px 0 16px;
   }
 
+  /*그래픽-어랏투고*/
   #container .project .graphic_container .promo_alot {
-    margin: 30px auto 0;
     max-width: 1208px;
     width: 100%;
   }
@@ -299,6 +313,34 @@ body {
 
   #container .project .promo_alot .overlay em {
     padding: 15px 0 20px;
+  }
+
+  /*그래픽-demo배너*/
+  #container .project .graphic_container .demo-banner {
+    margin: 24px auto 0;
+    max-width: 1208px;
+    width: 100%;
+    height: 184px;
+  }
+
+  #container .project .graphic_container .demo-banner img {
+    height: 184px;
+  }
+
+  /*그래픽 이미지 호버시-데모배너*/
+  #container .project .demo-banner .overlay {
+    padding: 40px 0 30px;
+    height: 184px;
+  }
+
+  #container .project .demo-banner .overlay strong {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  #container .project .demo-banner .overlay em {
+    padding: 6px 0 20px;
+    font-size: 1.3rem;
   }
 }
 
@@ -405,25 +447,34 @@ body {
 
   /*그래픽디자인 영역*/
   #container .project .graphic_container {
-    margin: 110px auto 30px;
-    width: 708px;
+    margin: 110px auto 0;
+    max-width: 708px;
+    width: 100%;
   }
 
-  #container .project .graphic_container ul img {
+  /*그래픽-허스텔러*/
+  #container .project .graphic_container .promo_hersteller li {
+    display: block;
+    margin: 0 auto;
+    max-width: 708px;
+    width: 100%;
+  }
+
+  #container .project .graphic_container .promo_hersteller img {
     width: 708px;
   }
 
   /*그래픽 이미지 호버시-허스텔러*/
-  #container .project .promo_hersteller li .overlay {
+  #container .project .graphic_container .promo_hersteller li .overlay {
     padding: 55px 63px 50px;
     max-width: 708px;
     width: 100%;
     height: 341px;
   }
 
+  /*그래픽-어랏투고*/
   #container .project .graphic_container .promo_alot {
     flex-wrap: wrap;
-    margin: 30px auto 0;
     row-gap: 12px;
     max-width: 708px;
     width: 100%;
@@ -439,6 +490,34 @@ body {
     height: 435px;
   }
 
+  /*그래픽-demo배너*/
+  #container .project .graphic_container .demo-banner {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    height: auto;
+  }
+
+  #container .project .graphic_container .demo-banner img {
+    height: 217px;
+  }
+
+  /*그래픽 이미지 호버시-demo배너*/
+  #container .project .demo-banner .overlay {
+    padding: 50px 10px 10px;
+    height: 217px;
+  }
+}
+
+/*breakpoint 960*/
+@media (max-width: 960px) {
+
+  /*그래픽-demo배너*/
+  #container .project .graphic_container .demo-banner {
+    max-width: 708px;
+    width: 100%;
+    height: auto;
+  }
 }
 
 /*breakpoint 768*/
@@ -547,7 +626,7 @@ body {
 
   /*프로젝트*/
   #container .project {
-    padding: 50px 30px 20px;
+    padding: 50px 30px 70px;
   }
 
   #container .project h2 {
@@ -631,10 +710,10 @@ body {
 
   /*그래픽디자인 영역*/
   #container .project .graphic_container {
-    margin: 60px auto;
+    margin-top: 60px;
   }
 
-  #container .project .graphic_container ul {
+  #container .project .graphic_container .promo_hersteller {
     display: block;
   }
 
@@ -649,55 +728,59 @@ body {
     line-height: 12px;
   }
 
-  #container .project .graphic_container ul img {
+  /*그래픽-허스텔러*/
+  #container .project .graphic_container .promo_hersteller img {
     width: 100%;
   }
 
   /*그래픽 이미지 호버시-허스텔러*/
-  #container .project .promo_hersteller li {
-    margin-bottom: 12px;
+  #container .project .graphic_container .promo_hersteller li {
+    margin-bottom: 16px;
   }
 
-  #container .project .promo_hersteller li .overlay {
+  #container .project .graphic_container .promo_hersteller li .overlay {
     padding: 84px 0 40px;
     width: 100%;
     height: 100%;
   }
 
-  #container .project .promo_hersteller .overlay strong {
+  #container .project .graphic_container .promo_hersteller .overlay strong {
     font-size: 1.8rem;
     line-height: 36px;
   }
 
-  #container .project .promo_hersteller .overlay p {
+  #container .project .graphic_container .promo_hersteller .overlay p {
     margin-top: 0px;
     font-size: 1.4rem;
     line-height: 22px;
   }
 
-  #container .project .promo_hersteller .overlay em {
+  #container .project .graphic_container .promo_hersteller .overlay em {
     padding: 20px 0;
     font-size: 1.8rem;
   }
 
-  #container .project .promo_hersteller .overlay>.btn>a {
+  #container .project .graphic_container .promo_hersteller .overlay>.btn>a {
     padding: 8px 20px 6px;
     font-size: 1.4rem;
   }
 
-  #container .project .promo_hersteller .overlay>.btn>a:hover {
+  #container .project .graphic_container .promo_hersteller .overlay>.btn>a:hover {
     padding: 8px 20px 6px;
     font-size: 1.4rem;
   }
 
+  /*그래픽-어랏투고*/
   #container .project .graphic_container .promo_alot {
     position: relative;
     display: block;
-    text-align: center;
+    margin: 0 auto;
+    max-width: 348px;
+    width: 100%;
   }
 
   #container .project .graphic_container .promo_alot>div {
-    margin-bottom: 12px;
+    margin-bottom: 16px;
   }
 
   /*그래픽 이미지 호버시-어랏투고*/
@@ -733,6 +816,13 @@ body {
   #container .project .promo_alot .overlay>.btn>a:hover {
     padding: 8px 20px 6px;
     font-size: 1.4rem;
+  }
+
+  /*그래픽-demo배너*/
+  #container .project .graphic_container .demo-banner {
+    margin-top: 16px;
+    max-width: 708px;
+    width: 100%;
   }
 
   /*퀵 영역*/
@@ -810,7 +900,7 @@ body {
 
   /*보유스킬*/
   #container .profile .skill .skill-cont .skill-column .skill-item {
-    max-width: 430px;
+    max-width: 350px;
     width: 100%;
   }
 
@@ -824,7 +914,7 @@ body {
   }
 
   #container .project .project_inner .info_area {
-    margin-bottom: 20px;
+    margin-bottom: 24px;
   }
 
   /*프로젝트 이미지 호버시 나타나는 내용*/
@@ -862,30 +952,29 @@ body {
   /*그래픽디자인 영역*/
   #container .project .graphic_container {
     margin: 60px auto;
-    padding: 0 20px;
     width: 100%;
   }
 
   /*그래픽 이미지 호버시-허스텔러*/
-  #container .project .promo_hersteller li .overlay {
+  #container .project .graphic_container .promo_hersteller li .overlay {
     padding: 30px;
   }
 
-  #container .project .promo_hersteller .overlay strong {
+  #container .project .graphic_container .promo_hersteller .overlay strong {
     line-height: 30px;
   }
 
-  #container .project .promo_hersteller .overlay em {
+  #container .project .graphic_container .promo_hersteller .overlay em {
     padding: 15px 0;
     font-size: 1.4rem;
   }
 
-  #container .project .promo_hersteller .overlay>.btn>a {
+  #container .project .graphic_container .promo_hersteller .overlay>.btn>a {
     padding: 4px 12px 3px;
     font-size: 1.2rem;
   }
 
-  #container .project .promo_hersteller .overlay>.btn>a:hover {
+  #container .project .graphic_container .promo_hersteller .overlay>.btn>a:hover {
     padding: 4px 16px 3px;
     font-size: 1.2rem;
   }
@@ -903,6 +992,23 @@ body {
   #container .project .promo_alot .overlay>.btn>a:hover {
     padding: 4px 16px 3px;
     font-size: 1.2rem;
+  }
+
+  /*그래픽-demo배너*/
+  #container .project .graphic_container .demo-banner {
+    max-width: 440px;
+    width: 100%;
+    height: auto;
+  }
+
+  #container .project .graphic_container .demo-banner img {
+    height: 184px;
+  }
+
+  /*그래픽 이미지 호버시-데모배너*/
+  #container .project .demo-banner .overlay {
+    padding: 40px 0 30px;
+    height: 184px;
   }
 
   /*푸터 영역*/
@@ -985,27 +1091,26 @@ body {
   }
 
   /*그래픽 이미지 호버시-허스텔러*/
-  #container .project .promo_hersteller li .overlay {
+  #container .project .graphic_container .promo_hersteller li .overlay {
     padding: 18px;
     width: 100%;
     height: 158px;
   }
 
-  #container .project .promo_hersteller .overlay strong {
+  #container .project .graphic_container .promo_hersteller .overlay strong {
     font-size: 1.6rem;
   }
 
-  #container .project .promo_hersteller .overlay p {
+  #container .project .graphic_container .promo_hersteller .overlay p {
     font-size: 1.3rem;
   }
 
-  #container .project .promo_hersteller .overlay em {
+  #container .project .graphic_container .promo_hersteller .overlay em {
     padding: 6px 0;
     font-size: 1.3rem;
   }
 
   #container .project .graphic_container .promo_alot img {
-    width: 100%;
     height: 410px;
   }
 
@@ -1013,6 +1118,58 @@ body {
   #container .project .promo_alot .overlay {
     width: 100%;
     height: 410px;
+    word-break: keep-all;
+  }
+
+  /*그래픽-demo배너*/
+  #container .project .graphic_container .demo-banner {
+    max-width: 328px;
+    width: 100%;
+  }
+
+  #container .project .graphic_container .demo-banner img {
+    height: 156px;
+  }
+
+  /*그래픽 이미지 호버시-데모배너*/
+  #container .project .demo-banner .overlay {
+    padding: 40px 0 30px;
+    height: 156px;
+  }
+
+  #container .project .demo-banner .overlay em {
+    padding: 6px 0 12px;
+  }
+
+  #container .project .demo-banner .overlay>.btn>a {
+    padding: 4px 8px 3px;
+    font-size: 1.1rem;
+    font-weight: 300;    
+  }
+
+  #container .project .demo-banner .overlay>.btn>a:hover {
+    padding: 4px 8px 3px;
+    font-size: 1.1rem;
+    font-weight: 300;
+  }
+}
+/*breakpoint 320*/
+@media screen and (max-width: 320px) {
+
+/*그래픽-어랏투고*/
+  #container .project .graphic_container .promo_alot{
+    max-width: 300px;
+    width: 100%;
+  }
+
+  #container .project .graphic_container .promo_alot img {
+    height: 360px;
+  }
+
+  /*그래픽 이미지 호버시-어랏투고*/
+  #container .project .promo_alot .overlay {
+    width: 100%;
+    height: 360px;
     word-break: keep-all;
   }
 }
