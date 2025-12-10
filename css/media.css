@@ -481,13 +481,13 @@ body {
   }
 
   #container .project .graphic_container .promo_alot img {
-    height: 435px;
+    height: 434px;
   }
 
   /*그래픽 이미지 호버시-어랏투고*/
   #container .project .promo_alot .overlay {
     padding: 110px 30px 50px;
-    height: 435px;
+    height: 434px;
   }
 
   /*그래픽-demo배너*/
@@ -773,9 +773,11 @@ body {
   /*그래픽-어랏투고*/
   #container .project .graphic_container .promo_alot {
     position: relative;
-    display: block;
+    justify-content: center;
     margin: 0 auto;
-    max-width: 348px;
+    column-gap: 12px;
+    row-gap: 0;
+    max-width: 708px;
     width: 100%;
   }
 
@@ -788,8 +790,6 @@ body {
     left: 50%;
     transform: translateX(-50%);
     padding: 40px;
-    max-width: 348px;
-    width: 100%;
   }
 
   #container .project .promo_alot .overlay strong {
