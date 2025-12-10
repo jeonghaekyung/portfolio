@@ -92,3 +92,64 @@ $(function () {
     }
   });
 });
+
+/*모달 팝업*/
+document.addEventListener('DOMContentLoaded', (event) => {
+  const modal = document.getElementById('imageModal');
+  const modalImage = document.getElementById('modalImage');
+  const closeBtn = document.querySelector('.close-btn');
+  const modalOverlay = document.querySelector('.modal-overlay');
+
+  // '이미지 보기' 버튼모두 선택
+  const allVisitButtons = document.querySelectorAll('.btn_visit');
+
+  // 팝업 닫기 함수
+  const closeModal = () => {
+    // is-open 클래스를 제거하여 모달을 숨김
+    modal.classList.remove('is-open');
+    document.body.style.overflow = ''; // 뒷 배경 스크롤 재개
+  };
+
+  // 팝업 닫기 이벤트 등록
+  closeBtn.addEventListener('click', closeModal);
+  modalOverlay.addEventListener('click', closeModal);
+
+  // Esc 키로 닫기
+  window.addEventListener('keydown', function (event) {
+    // is-open 클래스가 있는지 확인하여 닫기
+    if (event.key === 'Escape' && modal.classList.contains('is-open')) {
+      closeModal();
+    }
+  });
+
+  // 버튼 종류에 따라 동작 분기 로직
+  allVisitButtons.forEach(button => {
+    button.addEventListener('click', function (event) {
+
+      // 버튼에 target="_blank" 속성 확인
+      const isExternalLink = this.getAttribute('target') === '_blank';
+      const imagePath = this.getAttribute('data-image'); // data-image 속성 확인
+
+      // --------------------------------------------------------
+      // 1. 외부 링크 (target="_blank"가 있거나 data-image가 없으면)
+      // --------------------------------------------------------
+      if (isExternalLink || !imagePath) {
+        return; // 기본 동작(링크 이동) 허용
+      }
+
+      // --------------------------------------------------------
+      // 2. 모달 팝업 (target="_blank"가 없고 data-image가 있는 경우)
+      // --------------------------------------------------------
+
+      event.preventDefault(); // 기본 링크 이동 동작 방지
+
+      // 필수: 이미지 경로 설정
+      modalImage.src = imagePath;
+
+      // 필수: is-open 클래스를 추가하여 모달을 띄우고 중앙 정렬
+      modal.classList.add('is-open');
+
+      document.body.style.overflow = 'hidden'; // 뒷 배경 스크롤 방지
+    });
+  });
+});
